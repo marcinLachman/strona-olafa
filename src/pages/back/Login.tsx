@@ -9,7 +9,7 @@ interface InputProps {
 }
 
 // const BASE_URL = "http://localhost:8080/api";
-const BASE_URL = "https://coatofarms.design/api";
+const BASE_URL = "https://heraldry.design/api/";
 
 export const Login = () => {
   const [input, setInput] = useState<InputProps>({

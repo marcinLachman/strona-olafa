@@ -3,7 +3,7 @@ import axios, { AxiosResponse } from "axios";
 import type { Crests } from "../models/CrestModels";
 
 // const BASE_URL = "http://localhost:8080/api";
-const BASE_URL = "https://coatofarms.design/api";
+const BASE_URL = "https://heraldry.design/api/";
 
 export const loader = async () => {
   const getCrestData = async () => {

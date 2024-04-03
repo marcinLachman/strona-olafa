@@ -18,6 +18,7 @@ import { loader as crestsLoader } from "./helpers/CrestsLoaders.ts";
 // import { loader as crestLoader } from "./helpers/CrestLoaderById.ts";
 import CrestDetails from "./pages/front/CrestDetails.tsx";
 import { Dashboard } from "./pages/back/Dashboard.tsx";
+import { HomeBack } from "./pages/back/HomeBack.tsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -31,7 +32,7 @@ const router = createBrowserRouter(
           // loader={crestLoader}
         />
       </Route>
-      <Route>
+      <Route element={<HomeBack />}>
         <Route path="/login" element={<Login />} />
         <Route path="/dashboard" element={<Dashboard />}></Route>
       </Route>

@@ -8,7 +8,6 @@ interface LoaderCrests {
 
 export const Home = () => {
   const { crests } = useLoaderData() as LoaderCrests;
-  console.log(crests);
 
   return (
     <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-2 m-4">

@@ -21,7 +21,7 @@ import { Dashboard } from "./pages/back/Dashboard.tsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="/">
+    <Route>
       <Route element={<App />}>
         <Route path="/" element={<Home />} loader={crestsLoader} />
         <Route path="/about" element={<About />} />
@@ -31,7 +31,7 @@ const router = createBrowserRouter(
           // loader={crestLoader}
         />
       </Route>
-      <Route path="/">
+      <Route>
         <Route path="/login" element={<Login />} />
         <Route path="/dashboard" element={<Dashboard />}></Route>
       </Route>
